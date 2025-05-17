@@ -1,5 +1,5 @@
-import { ProgressBar } from './components';
-import { FlashCardScroller } from './components';
+import { ProgressBar } from "./components";
+import { FlashCardScroller } from "./components";
 
 function App() {
   return (
