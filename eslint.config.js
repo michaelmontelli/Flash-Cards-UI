@@ -26,5 +26,16 @@ export default defineConfig([
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat["jsx-runtime"],
   reactHooks.configs['recommended-latest'],
+  {
+    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+    rules: {
+      "padding-line-between-statements": [
+        "error",
+        { blankLine: "always", prev: "import", next: "*" },
+        { blankLine: "never", prev: "import", next: "import" },
+        { blankLine: "always", prev: "*", next: "function" }
+      ]
+    }
+  }
 ]);
 
